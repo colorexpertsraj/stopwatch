@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button_class">
+        change class text
+    </button>
+    <div class="class">
+        <h2>Hi colorexperts</h2>
+    </div>
+    <button class="button_id_query">
+        change id 1 text
+    </button>
+    <div id="id_query">
+        <h2>Kurippingupasu</h2>
+    </div>
+    <div id="id">
+        <h2>accessprinting solutions</h2>
+    </div>
+    <button class="button_id">
+        change id text
+    </button>
+    <script>
+        var query_selector_class = document.querySelector('.class');
+        var button_class = document.querySelector('.button_class');
+        button_class.addEventListener('click', function(){
+            query_selector_class.textContent = 'works';
+        });
+
+        var query_selector_id = document.querySelector('#id_query');
+        var button_id_query = document.querySelector('.button_id_query');
+        button_id_query.addEventListener('click', function(){
+            query_selector_id.textContent = "WORKING";
+        });
+
+        var get_element_by_id = document.getElementById('id');
+        var button_id = document.querySelector('.button_id');
+        button_id.addEventListener('click', function(){
+            get_element_by_id.textContent = "works";
+        });
+    </script>
+</body>
+</html>
